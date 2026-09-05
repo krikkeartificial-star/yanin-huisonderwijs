@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yanin · Huisonderwijs — overzicht</title>
+<style>
+  :root{--bg:#f4f6fb;--card:#fff;--ink:#1b2440;--muted:#5b6478;--accent:#2f5bff;
+        --accent2:#5b3df0;--accent-soft:#e8eeff;--border:#e2e7f0;--good:#1a9d5c;--warn:#eab308}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:920px;margin:0 auto;padding:24px 16px 80px}
+  header{background:linear-gradient(135deg,#2f5bff 0%,#5b3df0 100%);color:#fff;border-radius:18px;
+         padding:32px 30px;margin-bottom:22px;box-shadow:0 10px 30px rgba(47,91,255,.25)}
+  header h1{margin:0 0 8px;font-size:1.85rem;letter-spacing:-.02em}
+  header p{margin:0;opacity:.93;font-size:1rem}
+  h2{color:var(--accent);font-size:1.2rem;margin:26px 0 4px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-top:14px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px 20px 18px;text-decoration:none;
+        color:inherit;display:block;transition:transform .12s,border-color .12s,box-shadow .12s}
+  .card:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 10px 24px rgba(47,91,255,.15)}
+  .card .emoji{font-size:2rem;display:block;margin-bottom:8px}
+  .card h3{margin:0 0 4px;font-size:1.1rem}
+  .card p{margin:0;color:var(--muted);font-size:.88rem}
+  .badge{display:inline-block;margin-top:10px;border-radius:999px;padding:3px 11px;font-size:.75rem;font-weight:700}
+  .live{background:var(--good);color:#fff}
+  .soon{background:#e6e9f1;color:var(--muted)}
+  .note{background:#fff8e6;border:1px solid #f3d38b;border-radius:12px;padding:14px 16px;font-size:.9rem;margin-top:26px}
+  .note b{color:#986c00}
+  @media(max-width:560px){header h1{font-size:1.4rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Yanin · Huisonderwijs</h1>
+    <p>Interactieve oefenpagina's en toetsen — één pagina per vak. Klik een vak om te starten.</p>
+  </header>
+
+  <h2>Vakken</h2>
+  <div class="grid">
+    <a class="card" href="wiskunde.html">
+      <span class="emoji">📐</span>
+      <h3>Wiskunde</h3>
+      <p>Instapcheck — een nulmeting van je basis (tafels, breuken, eenheden, omtrek, procenten).</p>
+      <span class="badge live">Live · instapcheck klaar</span>
+    </a>
+    <a class="card" href="#">
+      <span class="emoji">📖</span>
+      <h3>Nederlands</h3>
+      <p>Komt eraan — krijgt hier een eigen pagina.</p>
+      <span class="badge soon">Binnenkort</span>
+    </a>
+    <a class="card" href="#">
+      <span class="emoji">🗣️</span>
+      <h3>Frans</h3>
+      <p>Komt eraan — krijgt hier een eigen pagina.</p>
+      <span class="badge soon">Binnenkort</span>
+    </a>
+  </div>
+
+  <div class="note">
+    <b>Over deze site.</b> Elke vakpagina staat afzonderlijk (per vak één pagina). De instapcheck voor wiskunde is de eerste;
+    de andere vakken verwijzen hiernaar. Werk je op je eigen tempo — dit is een nulmeting, geen toets.
+  </div>
+</div>
+</body>
+</html>
